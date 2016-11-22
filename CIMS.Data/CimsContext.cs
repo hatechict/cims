@@ -6,11 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity.Infrastructure;
 using CIMS.Model.Models;
-using CIMS.Model.Models.Mapping;
+using CIMS.Data.Mapping;
 
 namespace CIMS.Data.Infrastructure
 {
-    class CimsContext : DbContext
+   public class CimsContext : DbContext
     {
         public CimsContext()
             : base("CimsContext")
@@ -35,14 +35,14 @@ namespace CIMS.Data.Infrastructure
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Configurations.Add(new DetailResultMap());
-            modelBuilder.Configurations.Add(new EmployeeMap());
-            modelBuilder.Configurations.Add(new LabCategoryMap());
-            modelBuilder.Configurations.Add(new LabratoryMap());
-            modelBuilder.Configurations.Add(new LabratoryResultMap());
-            modelBuilder.Configurations.Add(new MedicalServiceMap());
-            modelBuilder.Configurations.Add(new PatientMap());
-            modelBuilder.Configurations.Add(new ServiceTypeMap());
+            //modelBuilder.Configurations.Add(new DetailResultMap());
+            //modelBuilder.Configurations.Add(new EmployeeMap());
+            //modelBuilder.Configurations.Add(new LabCategoryMap());
+            //modelBuilder.Configurations.Add(new LabratoryMap());
+            //modelBuilder.Configurations.Add(new LabratoryResultMap());
+            //modelBuilder.Configurations.Add(new MedicalServiceMap());
+            //modelBuilder.Configurations.Add(new PatientMap());
+            //modelBuilder.Configurations.Add(new ServiceTypeMap());
         }
     }
 }

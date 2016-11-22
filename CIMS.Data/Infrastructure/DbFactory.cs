@@ -19,5 +19,10 @@ namespace CIMS.Data.Infrastructure
             if (dbContext != null)
                 dbContext.Dispose();
         }
+
+        CimsContext IDbFactory.Init()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

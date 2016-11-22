@@ -1,7 +1,8 @@
+using CIMS.Model.Models;
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity.ModelConfiguration;
 
-namespace CIMS.Model.Models.Mapping
+namespace CIMS.Data.Mapping
 {
     public class LabratoryResultMap : EntityTypeConfiguration<LabratoryResult>
     {
