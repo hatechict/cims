@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CIMS.Data.Infrastructure
+namespace CIMS.Model
 {
-    public interface IDbFactory: IDisposable
+    public interface IEntityBase
     {
-      CimsContext Init();
     }
 }

@@ -126,6 +126,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\AdminLTE.css" />
@@ -236,10 +238,29 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\angular-base64.js" />
+    <Content Include="Scripts\angular-cookies.js" />
+    <Content Include="Scripts\angular-file-upload.js" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-validator.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Areas\PatientRecord\Views\web.config" />
+    <Content Include="Areas\PatientRecord\Views\PatientInformation\Index.cshtml" />
+    <Content Include="Areas\PatientRecord\Views\PatientInformation\Create.cshtml" />
+    <Content Include="Areas\PatientRecord\Views\PatientInformation\Edit.cshtml" />
+    <Content Include="Areas\PatientRecord\Views\PatientInformation\Delete.cshtml" />
+    <Content Include="Areas\PatientRecord\Views\PatientInformation\Details.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Areas\Labratory\Views\web.config" />
-    <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
@@ -248,9 +269,8 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Areas\Labratory\LabratoryAreaRegistration.cs" />
-    <Compile Include="Areas\Labratory\Controllers\LabratoriesController.cs" />
-    <Compile Include="Areas\Patient\PatientAreaRegistration.cs" />
+    <Compile Include="Areas\PatientRecord\Controllers\PatientInformationController.cs" />
+    <Compile Include="Areas\PatientRecord\PatientRecordAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -277,17 +297,6 @@
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Shared\_Sidebar.cshtml" />
     <Content Include="Views\Shared\_ControlSidebar.cshtml" />
-    <Content Include="Areas\Patient\Views\web.config" />
-    <Content Include="Areas\Patient\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\Patient\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\Labratory\Views\Labratories\Create.cshtml" />
-    <Content Include="Areas\Labratory\Views\Labratories\Delete.cshtml" />
-    <Content Include="Areas\Labratory\Views\Labratories\Details.cshtml" />
-    <Content Include="Areas\Labratory\Views\Labratories\Edit.cshtml" />
-    <Content Include="Areas\Labratory\Views\Labratories\Index.cshtml" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -298,10 +307,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Labratory\Models\" />
-    <Folder Include="Areas\Labratory\Views\Shared\" />
-    <Folder Include="Areas\Patient\Controllers\" />
-    <Folder Include="Areas\Patient\Models\" />
+    <Folder Include="Areas\PatientRecord\Models\" />
+    <Folder Include="Areas\PatientRecord\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

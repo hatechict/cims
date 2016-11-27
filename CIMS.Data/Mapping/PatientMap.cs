@@ -27,6 +27,7 @@ namespace CIMS.Data.Mapping
                 .IsRequired()
                 .IsFixedLength()
                 .HasMaxLength(1);
+            this.Property(t => t.Age).IsRequired();
 
             // Table & Column Mappings
             this.ToTable("Patient");
@@ -37,6 +38,7 @@ namespace CIMS.Data.Mapping
             this.Property(t => t.DateOfBirth).HasColumnName("DateOfBirth");
             this.Property(t => t.Gender).HasColumnName("Gender");
             this.Property(t => t.RegisteredDate).HasColumnName("RegisteredDate");
+            this.Property(t => t.Age).HasColumnName("Age");
         }
     }
 }

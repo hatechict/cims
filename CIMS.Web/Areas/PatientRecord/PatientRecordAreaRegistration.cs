@@ -1,22 +1,22 @@
 ﻿using System.Web.Mvc;
 
-namespace CIMS.Web.Areas.Labratory
+namespace CIMS.Web.Areas.PatientRecord
 {
-    public class LabratoryAreaRegistration : AreaRegistration 
+    public class PatientRecordAreaRegistration : AreaRegistration 
     {
         public override string AreaName 
         {
             get 
             {
-                return "Labratory";
+                return "PatientRecord";
             }
         }
 
         public override void RegisterArea(AreaRegistrationContext context) 
         {
             context.MapRoute(
-                "Labratory_default",
-                "Labratory/{controller}/{action}/{id}",
+                "PatientRecord_default",
+                "PatientRecord/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional }
             );
         }

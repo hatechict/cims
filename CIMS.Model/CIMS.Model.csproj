@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="DetailResult.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="IEntityBase.cs" />
     <Compile Include="IModelBase.cs" />
     <Compile Include="LabCategory.cs" />
     <Compile Include="Labratory.cs" />

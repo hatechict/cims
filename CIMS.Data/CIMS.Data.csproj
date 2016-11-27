@@ -48,9 +48,8 @@
   <ItemGroup>
     <Compile Include="CimsContext.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="Infrastructure\DbFactory.cs" />
-    <Compile Include="Infrastructure\Disposable.cs" />
-    <Compile Include="Infrastructure\IDbFactory.cs" />
+    <Compile Include="Infrastructure\GenerikRepository.cs" />
+    <Compile Include="Infrastructure\IGenericRepository.cs" />
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
     <Compile Include="Mapping\DetailResultMap.cs" />
